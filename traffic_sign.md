@@ -172,7 +172,7 @@ plt.legend(loc='best')
 plt.show()
 ```
 
-![](img/traffic.png)
+![](img/traffic001.png)
 
 ## 評価
 
