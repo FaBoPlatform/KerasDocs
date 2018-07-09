@@ -1,5 +1,6 @@
 * [はじめに](README.md)
 * HelloKeras
+	* [MNIST](mnist.md)
 * OpenCV
 	* [色空間の変換](colorspace.md)
 	* [サイズの変換](size.md)
@@ -7,3 +8,4 @@
 	* [Tips集](tips.md)
 * ラジコン制御
     * [信号認識](traffic_sign.md)
+    * [End2End](end2end.md)
