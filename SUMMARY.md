@@ -1,7 +1,7 @@
 * [はじめに](README.md)
 * HelloKeras
 * OpenCV
-	* [色空間の変換](colospace.md)
+	* [色空間の変換](colorspace.md)
 	* [サイズの変換](size.md)
 	* [色成分の分解](color.md)
 	* [Tips集](tips.md)
