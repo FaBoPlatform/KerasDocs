@@ -66,11 +66,6 @@ for i in range(42):
         features.append(resized)
         labels.append(int(logs[i][7]))
         
-print(len(features))
-print(len(labels))
-
-plt.imshow(features[0], cmap=plt.cm.gray_r,); plt.show()
-
 features = np.array(features).astype('float32')
 labels = np.array(labels).astype('float32')
 

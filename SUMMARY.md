@@ -9,4 +9,4 @@
 	* [Tips集](tips.md)
 * ラジコン制御
     * [信号認識](traffic_sign.md)
-    * [End2End](end2end.md)
+    * [End2End Dataset](end2end_dataset.md)
