@@ -1,12 +1,13 @@
 ## Local環境の構築(MAC)
 
-> pip install opencv-python
-> pip install socketio
-> pip install Image
-> pip install keras
-> pip install Flask
-> pip install tensorflow
-
+```
+pip install opencv-python
+pip install socketio
+pip install Image
+pip install keras
+pip install Flask
+pip install tensorflow
+```
 
 ## 学習済みModelのDownload
 
