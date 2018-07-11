@@ -140,7 +140,7 @@ if __name__ == '__main__':
 ![](img/auto01.png)
 
 
-## AIの実行
+## 学習済みモデルの実行
 
 > python drive.py model.json
 
