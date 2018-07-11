@@ -1,83 +1,16 @@
 # End2End Modelの作成
 
-## 教師データ、テストデータの作成
-
-型をfloat32に定義する
+## モデルと学習済みデータの保存
 
 ```python
-import numpy as np
-
-center_data  = np.array(center_data).astype('float32')
-direction_handle = np.array(direction_handle).astype('float32')
+def model_save(model_json,model_h5):
+    json_model = model.to_json()
+    with open(model_json, "w") as f:
+        f.write(json_model)
+    model.save_weights(model_h5) 
 ```
 
-値のシャッフル
-
-```pyhton
-from sklearn.utils import shuffle
-
-center_data, direction_handle = shuffle(center_data, direction_handle)
-```
-
-教師データ、テストデータの切り出し
-
-```python
-from sklearn.model_selection import train_test_split
-
-train_center, test_center, train_direction, test_direction = train_test_split(center_data, direction_handle, random_state=0, test_size=0.1)
-```
-
-Reshape
-
-```python
-rows = 10
-cols = 40
-train_center = train_center.reshape(train_center.shape[0], rows, cols, 1)
-test_center = test_center.reshape(test_center.shape[0], rows, cols, 1)
-```
-
-## Modelの作成
-
-```python
-from keras.models import *
-from keras.layers import *
-from keras.optimizers import Adam
-
-def end2end_model():
-    model = Sequential()
-    model.add(Lambda(lambda x: x/127.5 - 1.,input_shape=(rows,cols,1)))    
-
-    model.add(Convolution2D(8, 3, 3, init='normal',border_mode='valid'))
-    model.add(Activation('relu'))
-    model.add(MaxPooling2D((2,2),border_mode='valid'))
-
-    model.add(Convolution2D(8, 3, 3,init='normal',border_mode='valid'))
-    model.add(Activation('relu'))
-    model.add(MaxPooling2D((2,2),border_mode='valid'))
-
-    model.add(Dropout(0.2))
-    model.add(Flatten())
-    model.add(Dense(50))
-    model.add(Activation('relu'))
-    model.add(Dense(1))
-
-    model.summary()
-
-    return model
-```
-
-## 学習の開始
-
-```python
-batch = 128
-epoc = 10
-adam = Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0)
-
-model = end2end()
-model.compile(loss='mean_squared_error',optimizer='adam',metrics=['accuracy'])
-
-history = model.fit(train_center, train_direction,batch_size=batch, nb_epoch=epoc,verbose=1, validation_data=(test_center, test_direction))
-```
+> model_save("model.json", "model.h5")
 
 
 ## ここまでのソース
@@ -169,6 +102,12 @@ def end2end_model():
 
     return model
 
+def model_save(model_json,model_h5):
+    json_model = model.to_json()
+    with open(model_json, "w") as f:
+        f.write(json_model)
+    model.save_weights(model_h5) 
+
 if __name__ == '__main__':
     (center_img, direction_handle) = load_data()
     
@@ -199,4 +138,6 @@ if __name__ == '__main__':
     model.compile(loss='mean_squared_error',optimizer='adam',metrics=['accuracy'])
 
     history = model.fit(train_center, train_direction,batch_size=batch, nb_epoch=epoc,verbose=1, validation_data=(test_center, test_direction))
+
+    model_save("./model.json", "./model.h5")
 ```
