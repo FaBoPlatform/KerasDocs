@@ -18,4 +18,4 @@
 	* [End2End Save](end2end_save.md)
 	* [End2End Run](end2end_run.md)
 * GMM
-	* [GMM of MFCC](gmm_mfcc.md)
+	* [GMM on MFCC](gmm_mfcc.md)
