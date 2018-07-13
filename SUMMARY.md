@@ -8,6 +8,8 @@
 	* [色成分の分解](color.md)
 	* [範囲を指定してCrop](crop.md)
 	* [Tips集](tips.md)
+* Spectrumgram
+	* [スペクトラグラム](spectrum.md)
 * ラジコン制御
     * [信号認識](traffic_sign.md)
     * [End2End Emulator](end2end_emulator.md)
