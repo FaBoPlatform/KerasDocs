@@ -26,4 +26,4 @@
 	* [Deataset](tpu_dataset.md)
 	* [TPUのconfig](tpu_config.md)
 	* [TPUのrun](tpu_run.md)
-	
+	* [Androidで実行](tpu_android.md)

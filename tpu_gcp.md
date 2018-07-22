@@ -92,7 +92,7 @@ $ export YOUR_GCS_BUCKET="バケット名"
 
 docker内で実行
 ```shell
-$ curl -H "Authorization: Bearer $(gcloud auth print \
+$ curl -H "Authorization: Bearer $(gcloud auth print-access-token)"  \
 https://ml.googleapis.com/v1/projects/${PROJECT}:getConfig
 ```
 
