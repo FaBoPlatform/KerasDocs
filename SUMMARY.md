@@ -20,3 +20,10 @@
 	* [SSD](ssd.md)
 * GMM
 	* [GMM on MFCC](gmm_mfcc.md)
+* TPU
+	* [GCPの設定](tpu_gcp.md)
+	* [TensorFlowの設定](tpu_tf.md)
+	* [Deataset](tpu_dataset.md)
+	* [TPUのconfig](tpu_config.md)
+	* [TPUのrun](tpu_run.md)
+	
