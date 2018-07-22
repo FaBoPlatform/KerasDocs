@@ -1,5 +1,9 @@
 # GCPの設定
 
+## 参考
+
+https://medium.com/tensorflow/training-and-serving-a-realtime-mobile-object-detector-in-30-minutes-with-cloud-tpus-b78971cf1193
+
 ## GCP
 
 ### Projectの作成
