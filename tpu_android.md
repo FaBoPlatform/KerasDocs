@@ -36,6 +36,13 @@ tensroflow/example/android
 
 ## Build.gradle
 
-> def nativeBuildSystem = 'none'
+```
+def nativeBuildSystem = 'none'
+```
 
-
+```
+dependencies {
+    compile 'org.tensorflow:tensorflow-android:+'
+    compile 'org.tensorflow:tensorflow-lite:+'
+}
+```
