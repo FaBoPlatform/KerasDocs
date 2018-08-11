@@ -11,6 +11,8 @@ $ (cd slim && python setup.py sdist)
 
 ## トレーニングJob
 
+--job-dirは、学習毎に違うフォルダを指定する(そうしないとエラー)。
+
 docker内で実行
 ```shell
 $ gcloud ml-engine jobs submit training `whoami`_object_detection_`date +%s` \

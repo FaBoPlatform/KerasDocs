@@ -268,7 +268,7 @@ eval_input_reader: {
 }
 ```
 
-## アップロード
+## ConfigをGCSにアップ
 
 ```shell
 $ gsutil cp object_detection/samples/configs/ssd_mobilenet_v1_0.75_depth_quantized_300x300_pets_sync.config gs://${YOUR_GCS_BUCKET}/data/pipeline.config

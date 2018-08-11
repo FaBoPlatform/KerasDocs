@@ -31,6 +31,20 @@ https://console.cloud.google.com/flows/enableapi?apiid=ml.googleapis.com,compute
 
 > $ docker run -it -p 8888:8888 tensorflow/tensorflow 
 
+すでにdocker imageをインストール済みの場合
+
+```shell
+$ docker ps
+```
+
+でContainer IDを取得し、
+
+```shell
+$ dockder start 起動したコンテナID
+```
+
+で起動する。
+
 ### Google Cloud SDKのインストール
 
 起動したDockerにログインする
