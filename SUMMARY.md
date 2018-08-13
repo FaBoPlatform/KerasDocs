@@ -28,3 +28,4 @@
 	* [TPUのconfig](tpu_config.md)
 	* [TPUのrun](tpu_run.md)
 	* [Androidで実行](tpu_android.md)
+	* [ssd_mobilenet_v1_ppn_coco](ssd_mobilenet_v1_ppn_coco.md)
