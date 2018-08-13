@@ -21,6 +21,7 @@
 * GMM
 	* [GMM on MFCC](gmm_mfcc.md)
 * TPU
+	* [TPUに対応しているモデル](tpu_support.md)
 	* [GCPの設定](tpu_gcp.md)
 	* [TensorFlowの設定](tpu_tf.md)
 	* [Deataset](tpu_dataset.md)
