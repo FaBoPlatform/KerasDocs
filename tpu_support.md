@@ -4,6 +4,7 @@ https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc
 
 
 |Model名|Speed (ms)|	COCO mAP[^1]|config|
+|:--|:--|:--|:--|:--|
 |ssd_mobilenet_v1_0.75_depth_coco | 26 |	18	||
 |ssd_mobilenet_v1_quantized_coco  | 29 |	18	||
 |ssd_mobilenet_v1_0.75_depth_quantized_coco  | 29 | 16 ||
