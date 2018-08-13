@@ -30,3 +30,4 @@
 	* [Androidで実行](tpu_android.md)
 	* [ssd_mobilenet_v1_ppn_coco](ssd_mobilenet_v1_ppn_coco.md)
 	* [ssd_mobilenet_v1_fpn_coco](ssd_mobilenet_v1_fpn_coco.md)
+	* [ssd_resnet_50_fpn_coco](ssd_resnet_50_fpn_coco.md)
