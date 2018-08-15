@@ -26,7 +26,7 @@ AutoML Visionを使用するには、料金支払の設定と、APIの有効化�
 
 ![](./img/automl004.png)
 
-# Labelづけ
+# Label作成
 
 ![](./img/automl005.png)
 
@@ -36,11 +36,15 @@ AutoML Visionを使用するには、料金支払の設定と、APIの有効化�
 
 ![](./img/automl008.png)
 
+# ImageへのLabelづけ
+
 ![](./img/automl009.png)
 
 ![](./img/automl010.png)
 
 ![](./img/automl011.png)
+
+# 学習
 
 
 
