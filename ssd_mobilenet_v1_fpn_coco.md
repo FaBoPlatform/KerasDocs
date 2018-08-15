@@ -70,3 +70,4 @@ $ bazel run -c opt tensorflow/contrib/lite/toco:toco -- --input_file=$OUTPUT_DIR
 ```shell
 $ git reset --hard
 ```
+
