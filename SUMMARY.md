@@ -34,3 +34,4 @@
 	* [Androidでの動作確認](android_support.md)
 * AutoML
 	* [AutoMLの有効化](automl.md)
+	* [RaspberryPiからの呼び出し](automl_pi.md)
