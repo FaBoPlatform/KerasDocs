@@ -46,6 +46,10 @@ AutoML Visionを使用するには、料金支払の設定と、APIの有効化�
 
 # 学習
 
+![](./img/automl012.png)
+
+![](./img/automl013.png)
+
 
 
 
