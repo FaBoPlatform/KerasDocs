@@ -20,3 +20,6 @@ AutoML Visionを使用するには、料金支払の設定と、APIの有効化�
 
 ![](./img/automl003.png)
 
+[Aizu Dataset](https://github.com/FaBoPlatform/KerasDocs/raw/master/dataset/dataset_aizu.zip)
+
+
