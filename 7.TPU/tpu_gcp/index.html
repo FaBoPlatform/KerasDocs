@@ -996,14 +996,14 @@
 <h3 id="project">Projectの作成</h3>
 <p>https://console.cloud.google.com/projectcreate
 からプロジェクトを作成する。</p>
-<p><img alt="" src="img/gcp001.png" /></p>
+<p><img alt="" src="../img/gcp001.png" /></p>
 <h3 id="_2">支払いの有効化</h3>
 <p>TPUは基本有料なので、支払いのアカウント設定をおこなう</p>
-<p><img alt="" src="img/gcp002.png" /></p>
+<p><img alt="" src="../img/gcp002.png" /></p>
 <h3 id="cloud-machine-learning-engine-computeapi">Cloud Machine Learning Engine ComputeのAPI有効化</h3>
 <p>https://console.cloud.google.com/flows/enableapi?apiid=ml.googleapis.com,compute_component</p>
 <p>からCloud Machine Learning Engine ComputeのAPIを有効化する</p>
-<p><img alt="" src="img/gcp003.png" /></p>
+<p><img alt="" src="../img/gcp003.png" /></p>
 <h3 id="docker">ローカルにDockerのインストール</h3>
 <blockquote>
 <p>$ docker run -it -p 8888:8888 tensorflow/tensorflow </p>
@@ -1037,8 +1037,8 @@ CONTAINER ID        IMAGE                   COMMAND                  CREATED    
 </pre></div></td></tr></table></p>
 <h3 id="_3">プロジェクトの設定</h3>
 <p>GCPのホームに戻り、プロジェクトIDをコピーしてくる。</p>
-<p><img alt="" src="img/gcp004.png" /></p>
-<p><img alt="" src="img/gcp005.png" /></p>
+<p><img alt="" src="../img/gcp004.png" /></p>
+<p><img alt="" src="../img/gcp005.png" /></p>
 <p>プロジェクトIDを指定して、configを実行</p>
 <p>docker内で実行</p>
 <p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre>1</pre></div></td><td class=code><div class=codehilite><pre><span></span>$ gcloud config <span class=nb>set</span> project <span class=s2>&quot;プロジェクトID&quot;</span>
